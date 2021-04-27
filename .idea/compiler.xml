@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="run" />
+        <module name="buffer" />
+        <module name="tag" />
+        <module name="type" />
+        <module name="workAndChinese" />
+        <module name="root" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="buffer" target="1.8" />
+      <module name="llfEnglish" target="1.8" />
+      <module name="root" target="1.8" />
+      <module name="run" target="1.8" />
+      <module name="tag" target="1.8" />
+      <module name="type" target="1.8" />
+      <module name="workAndChinese" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="buffer" options="-parameters" />
+      <module name="llfEnglish" options="" />
+      <module name="root" options="-parameters" />
+      <module name="run" options="-parameters" />
+      <module name="tag" options="-parameters" />
+      <module name="type" options="-parameters" />
+      <module name="workAndChinese" options="-parameters" />
+    </option>
+  </component>
+</project>
