@@ -1,0 +1,38 @@
+<!--region 中文组词Id-->
+<div class="form-group" th:if="${entity!=null}">
+  <div class="col-md-2">
+    <label>单词类型Id</label>
+  </div>
+  <div class="col-md-5">
+    <input type="hidden" name="wordTypeId" class="form-control"
+           th:value="${entity?.wordTypeId}">
+    <div th:text="${entity?.wordTypeId}"></div>
+  </div>
+</div>
+<!--endregion-->
+
+<!--region 英语单词拼写 -->
+<div class="form-group">
+  <div class="col-md-2">
+    <label for="wordSelf">
+      <i class="text-danger h3">*</i>单词类型名称：
+    </label>
+  </div>
+  <div class="col-md-5">
+    <input id="wordSelf" class="form-control"
+           name="wordTypeName"
+           th:value="${entity?.wordTypeName}" size="50" type="text">
+  </div>
+</div>
+<!--endregion-->
+
+<!--region 单词类型备注-->
+<div class="form-group">
+  <div class="col-md-2"><label for="wordTypeComment">单词类型备注：</label></div>
+  <div class="col-md-5">
+        <textarea name="wordTypeComment" id="wordTypeComment" class="form-control" cols="30"
+                  rows="10" placeholder="请输入单词类型备注"
+                  th:text="${entity?.wordTypeComment}"></textarea>
+  </div>
+</div>
+<!--endregion-->

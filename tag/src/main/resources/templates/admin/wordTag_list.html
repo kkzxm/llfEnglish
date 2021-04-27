@@ -1,0 +1,18 @@
+<tr>
+    <th>序号</th>
+    <th>单词标签名</th>
+    <th>单词标签备注</th>
+    <th>所属标签组</th>
+    <th>操作</th>
+</tr>
+<!--/*@thymesVar id="item" type="com.lingDream.llfEnglish.entity.WordTag"*/-->
+<tr th:each="item:${page.records}">
+    <td th:text="${itemStat.count}"></td>
+    <td th:text="${item.wordTagName}"></td>
+    <td th:text="${item.tagComment}"></td>
+    <td th:text="${item.tagGroup?.tagGroupName}"></td>
+    <td>
+        <a th:href="|@{/}${partAddress}/updateFindById?wordTagId=${item.wordTagId}|" class="link-update">修改</a>
+        <a th:onclick="|delAjax({wordTagId:${item.wordTagId}})|" href="#" class="link-del">删除</a>
+    </td>
+</tr>

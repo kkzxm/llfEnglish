@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingDream.llfEnglish.mapper.TagGroupMapper">
+    <!--region 结果集映射-->
+    <resultMap id="tagGroup" type="com.lingDream.llfEnglish.entity.TagGroup">
+
+    </resultMap>
+    <select id="selectByOnly" resultMap="tagGroup">
+        select * from tag_group where tag_group_name = #{tagGroupName}
+    </select>
+    <!--endregion-->
+</mapper>

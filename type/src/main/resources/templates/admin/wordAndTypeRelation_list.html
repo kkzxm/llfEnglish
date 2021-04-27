@@ -1,0 +1,19 @@
+<tr>
+    <th>序号</th>
+    <th>单词拼写</th>
+    <th>单词类型</th>
+    <th>单词与类型关系备注</th>
+    <th>操作</th>
+</tr>
+<!--/*@thymesVar id="item" type="com.lingDream.llfEnglish.entity.WordAndTypeRelation"*/-->
+<tr th:each="item:${page.records}">
+    <td th:text="${itemStat.count}"></td>
+    <td th:text="${item.word?.wordSelf}"></td>
+    <td th:text="${item.wordType?.wordTypeName}"></td>
+    <td th:text="${item.wordAndTypeComment}"></td>
+    <td>
+        <a th:href="|@{/}${partAddress}/updateFindById?wordId=${item.word?.wordId}&wordTypeId=${item.wordType?.wordTypeId}|"
+           class="link-update">修改</a>
+        <a th:onclick="|delAjax({wordTypeId:${item.wordType?.wordTypeId},wordId:${item.word?.wordId}})|" class="link-del">删除</a>
+    </td>
+</tr>

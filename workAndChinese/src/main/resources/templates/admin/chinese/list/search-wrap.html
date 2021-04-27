@@ -1,0 +1,21 @@
+<form th:action="@{/dormitories/getPage}" method="get" class="form-inline" role="search">
+    <div class="form-group">
+        <label for="filter">选择分类:</label>
+        <select name="filter" id="filter" class="form-control">
+            <option value="dormitory_type_name">宿舍类型</option>
+            <option value="dormitory_subarea_name">宿舍分区</option>
+            <option value="class_name">宿舍归属班级</option>
+            <option value="dormitory_no">宿舍门牌号</option>
+            <option value="person_name">宿舍长</option>
+            <option value="dormitory_comment">宿舍备注</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="val">关键字:</label>
+        <input class="form-control" placeholder="关键字" name="val" id="val" type="text">
+    </div>
+    <div class="form-group">
+        <label for="search"></label>
+        <input class="btn btn-primary form-control" value="查询" type="submit" id="search">
+    </div>
+</form>

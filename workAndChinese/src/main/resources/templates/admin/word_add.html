@@ -1,0 +1,38 @@
+<!--region 英语单词Id-->
+<div class="form-group" th:if="${entity!=null}">
+    <div class="col-md-2">
+        <label>英语单词Id</label>
+    </div>
+    <div class="col-md-5">
+        <input type="hidden" name="wordId" class="form-control"
+               th:value="${entity?.wordId}">
+        <div th:text="${entity?.wordId}"></div>
+    </div>
+</div>
+<!--endregion-->
+
+<!--region 英语单词拼写 -->
+<div class="form-group">
+    <div class="col-md-2">
+        <label for="wordSelf">
+            <i class="text-danger h3">*</i>英语单词拼写：
+        </label>
+    </div>
+    <div class="col-md-5">
+        <input id="wordSelf" class="form-control"
+               name="wordSelf"
+               th:value="${entity?.wordSelf}" size="50" type="text">
+    </div>
+</div>
+<!--endregion-->
+
+<!--region 中文组词备注-->
+<div class="form-group">
+    <div class="col-md-2"><label for="wordComment">英语单词备注：</label></div>
+    <div class="col-md-5">
+        <textarea name="wordComment" id="wordComment" class="form-control" cols="30"
+                  rows="10" placeholder="请输入英语单词备注"
+                  th:text="${entity?.wordComment}"></textarea>
+    </div>
+</div>
+<!--endregion-->

@@ -1,0 +1,18 @@
+<tr>
+    <th>序号</th>
+    <th>英文拼写</th>
+    <th>中文翻译</th>
+    <th>翻译备注</th>
+    <th>操作</th>
+</tr>
+<!--/*@thymesVar id="item" type="com.lingDream.llfEnglish.entity.WordToChinese"*/-->
+<tr th:each="item:${page.records}">
+    <td th:text="${itemStat.count}"></td>
+    <td th:text="${item.word?.wordSelf}"></td>
+    <td th:text="${item.chinese?.chineseInfo}"></td>
+    <td th:text="${item.wordToChineseComment}"></td>
+    <td>
+        <a th:href="|@{/}${partAddress}/updateFindById?wordId=${item.word.wordId}&chineseId=${item.chinese?.chineseId}|" class="link-update">修改</a>
+        <a th:onclick="|delAjax({chineseId:${item.chinese?.chineseId},wordId:${item.word?.wordId}})|">删除</a>
+    </td>
+</tr>

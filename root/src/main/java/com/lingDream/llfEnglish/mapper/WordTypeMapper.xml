@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingDream.llfEnglish.mapper.WordTypeMapper">
+    <!--region 结果集映射-->
+    <resultMap id="wordType" type="com.lingDream.llfEnglish.entity.WordType">
+
+    </resultMap>
+    <!--endregion-->
+    <select id="selectByOnly" resultMap="wordType">
+        select *
+        from word_type
+        where word_type_name = #{wordTypeName}
+    </select>
+</mapper>

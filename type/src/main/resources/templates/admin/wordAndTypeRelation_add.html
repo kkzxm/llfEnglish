@@ -1,0 +1,40 @@
+<!--/*@thymesVar id="entity" type="com.lingDream.llfEnglish.entity.WordAndTypeRelation"*/-->
+<!--region 英语单词-->
+<div class="form-group">
+  <div class="col-md-2">
+    <label for="wordSelf">英语单词</label>
+  </div>
+  <input type="hidden" th:value="${entity?.word?.wordId}" name="wordId" th:if="${entity != null}">
+  <div class="col-md-5">
+    <input type="text" id="wordSelf" name="wordSelf" class="form-control"
+           th:value="${entity?.word?.wordSelf}">
+  </div>
+</div>
+<!--endregion-->
+
+<!--region 英语类型 -->
+<div class="form-group">
+  <div class="col-md-2">
+    <label for="wordTypeName">
+      <i class="text-danger h3">*</i>单词类型名称：
+    </label>
+  </div>
+  <input type="hidden" th:value="${entity?.wordType?.wordTypeId}" name="wordTypeId" th:if="${entity != null}">
+  <div class="col-md-5">
+    <input id="wordTypeName" class="form-control"
+           name="wordTypeName"
+           th:value="${entity?.wordType?.wordTypeName}" size="50" type="text">
+  </div>
+</div>
+<!--endregion-->
+
+<!--region 单词类型备注-->
+<div class="form-group">
+  <div class="col-md-2"><label for="wordAndTypeComment">单词类型备注：</label></div>
+  <div class="col-md-5">
+        <textarea name="wordAndTypeComment" id="wordAndTypeComment" class="form-control" cols="30"
+                  rows="10" placeholder="请输入单词类型备注"
+                  th:text="${entity?.wordAndTypeComment}"></textarea>
+  </div>
+</div>
+<!--endregion-->

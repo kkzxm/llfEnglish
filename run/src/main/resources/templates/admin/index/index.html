@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CH" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <links th:replace="admin/adminPublic/links.html"></links>
+    <title th:text="首页"></title>
+</head>
+<body>
+<!--region main 容器-->
+<div class="container-fluid">
+
+    <!--region 顶部导航菜单-->
+    <div>
+        <header th:insert="admin/adminPublic/adminHeader.html"></header>
+    </div>
+    <!--endregion-->
+
+    <hr>
+
+    <!--region 内容区域-->
+    <div class="row">
+        <!--region 左侧导航栏-->
+        <div class="col-md-2">
+            <div th:include="admin/adminPublic/adminLeft.html"></div>
+        </div>
+        <!--endregion-->
+
+        <!--region 内容显示区域-->
+        <div class="col-md-10">
+
+            <!--region 导航器-->
+            <ol class="breadcrumb">
+                <li><a th:href="@{/toIndexPage}">首页</a></li>
+            </ol>
+            <!--endregion-->
+
+            <hr>
+
+            <!--region 内容-->
+            <ol class="breadcrumb">
+                <li><a href="#">?1</a></li>
+                <li><a href="#">?1</a></li>
+                <li><a href="#">?1</a></li>
+                <li><a href="#">?1</a></li>
+                <li><a href="#">?1</a></li>
+            </ol>
+            <!--endregion-->
+        </div>
+        <!--endregion-->
+    </div>
+    <!--endregion-->
+
+    <!--region 底部信息-->
+    <div class="row">
+        底
+    </div>
+    <!--endregion-->
+</div>
+<!--endregion-->
+</body>
+</html>
