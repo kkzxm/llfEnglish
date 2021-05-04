@@ -1,7 +1,7 @@
 package com.lingDream.llfEnglish.controller;
 
 import com.lingDream.llfEnglish.entity.Word;
-import com.lingDream.llfEnglish.root.LlfEnglishController;
+import com.lingDream.root.controller.ControllerImpl;
 import com.lingDream.root.service.MyService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "/word")
-public class WordController extends LlfEnglishController<Word> {
+public class WordController extends ControllerImpl<Word> {
 
     public WordController(MyService<Word> service) {
-        super(service, "英语单词 → ");
+        super(service, "英语单词");
     }
 
 }

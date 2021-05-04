@@ -1,7 +1,6 @@
 package com.lingDream.llfEnglish.mapper;
 
 import com.lingDream.llfEnglish.entity.Chinese;
-
 import com.lingDream.root.mapper.MyMapper;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -6,7 +6,7 @@
 
     <groupId>com.lingDream</groupId>
     <artifactId>llfEnglish</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>llfEnglish</name>
     <description>个人用英语单词项目</description>
@@ -37,14 +37,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.lingDream</groupId>
-            <artifactId>ROOT</artifactId>
-            <version>1.0.0</version>
+            <artifactId>lingDreamRoot</artifactId>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

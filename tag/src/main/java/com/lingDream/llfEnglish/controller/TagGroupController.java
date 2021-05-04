@@ -1,7 +1,7 @@
 package com.lingDream.llfEnglish.controller;
 
 import com.lingDream.llfEnglish.entity.TagGroup;
-import com.lingDream.llfEnglish.root.LlfEnglishController;
+import com.lingDream.root.controller.ControllerImpl;
 import com.lingDream.root.service.MyService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "/tagGroup")
-public class TagGroupController extends LlfEnglishController<TagGroup> {
+public class TagGroupController extends ControllerImpl<TagGroup> {
 
     public TagGroupController(MyService<TagGroup> service) {
-        super(service, "单词标签组 → ");
+        super(service, "单词标签组");
     }
 }

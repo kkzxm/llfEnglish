@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="llf_English@localhost" uuid="ac10415b-e63c-4700-befa-e78470315007">
+    <data-source source="LOCAL" name="llf_english@localhost" uuid="e9986e03-10c3-4e0b-8a74-423e6a3e1af2">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/llf_English</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/llf_english</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <driver-properties>
         <property name="serverTimezone" value="UTC" />

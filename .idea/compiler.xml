@@ -28,7 +28,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="buffer" options="-parameters" />
-      <module name="llfEnglish" options="" />
       <module name="root" options="-parameters" />
       <module name="run" options="-parameters" />
       <module name="tag" options="-parameters" />
