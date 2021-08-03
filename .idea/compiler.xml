@@ -7,31 +7,38 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="run" />
-        <module name="buffer" />
-        <module name="tag" />
-        <module name="type" />
-        <module name="workAndChinese" />
-        <module name="root" />
+        <module name="model-englishType" />
+        <module name="model-englishTag" />
+        <module name="llfEnglish-security" />
+        <module name="llfEnglish-run" />
+        <module name="model-englishWord" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="buffer" target="1.8" />
+      <module name="common-model" target="1.8" />
+      <module name="common-tool" target="1.8" />
       <module name="llfEnglish" target="1.8" />
-      <module name="root" target="1.8" />
+      <module name="llfEnglish-run" target="1.8" />
+      <module name="llfEnglish-security" target="1.8" />
+      <module name="model-englishTag" target="1.8" />
+      <module name="model-englishType" target="1.8" />
+      <module name="model-englishWord" target="1.8" />
       <module name="run" target="1.8" />
-      <module name="tag" target="1.8" />
-      <module name="type" target="1.8" />
       <module name="workAndChinese" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="buffer" options="-parameters" />
-      <module name="root" options="-parameters" />
+      <module name="common-model" options="-parameters" />
+      <module name="common-tool" options="-parameters" />
+      <module name="llfEnglish-run" options="-parameters" />
+      <module name="llfEnglish-security" options="-parameters" />
+      <module name="model-englishTag" options="-parameters" />
+      <module name="model-englishType" options="-parameters" />
+      <module name="model-englishWord" options="-parameters" />
       <module name="run" options="-parameters" />
-      <module name="tag" options="-parameters" />
-      <module name="type" options="-parameters" />
       <module name="workAndChinese" options="-parameters" />
     </option>
   </component>

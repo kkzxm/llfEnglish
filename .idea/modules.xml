@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/buffer/buffer.iml" filepath="$PROJECT_DIR$/buffer/buffer.iml" />
       <module fileurl="file://$PROJECT_DIR$/llfEnglish.iml" filepath="$PROJECT_DIR$/llfEnglish.iml" />
-      <module fileurl="file://$PROJECT_DIR$/root/root.iml" filepath="$PROJECT_DIR$/root/root.iml" />
-      <module fileurl="file://$PROJECT_DIR$/run/run.iml" filepath="$PROJECT_DIR$/run/run.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tag/tag.iml" filepath="$PROJECT_DIR$/tag/tag.iml" />
-      <module fileurl="file://$PROJECT_DIR$/type/type.iml" filepath="$PROJECT_DIR$/type/type.iml" />
-      <module fileurl="file://$PROJECT_DIR$/workAndChinese/workAndChinese.iml" filepath="$PROJECT_DIR$/workAndChinese/workAndChinese.iml" />
+      <module fileurl="file://$PROJECT_DIR$/llfEnglish-run/llfEnglish-run.iml" filepath="$PROJECT_DIR$/llfEnglish-run/llfEnglish-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/llfEnglish-security/llfEnglish-security.iml" filepath="$PROJECT_DIR$/llfEnglish-security/llfEnglish-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model-englishTag/model-englishTag.iml" filepath="$PROJECT_DIR$/model-englishTag/model-englishTag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model-englishType/model-englishType.iml" filepath="$PROJECT_DIR$/model-englishType/model-englishType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model-englishWord/model-englishWord.iml" filepath="$PROJECT_DIR$/model-englishWord/model-englishWord.iml" />
     </modules>
   </component>
 </project>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/buffer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/root/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/run/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tag/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/type/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/workAndChinese/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llfEnglish-run/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/llfEnglish-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/model-englishTag/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/model-englishType/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/model-englishWord/src/main/java" charset="UTF-8" />
   </component>
 </project>
